@@ -22,7 +22,14 @@
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker": {
+			"moby": true,
+			"version": "latest",
+			"dockerDashComposeVersion": "v2",
+			"installDockerBuildx": true
+		}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
